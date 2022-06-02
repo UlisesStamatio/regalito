@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>8 mesesotes</title>
+	<meta name="author" content="Ulises" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+	<meta name="Resource-type" content="Document" />
+  <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+  <script src="https://kit.fontawesome.com/af8eaa7fca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <style>
+
+
+    h1{
+      font-size: 5em;
+      font-family: arial,helvetica;
+      color: #fff;
+      margin:0;
+      padding:0;
+    }
+  
+    .section{
+      text-align:center;
+      overflow: hidden;
+    }
+  
+    #myVideo{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+       background-color: black; 
+        /*background-image: ;*/
+        background-position: center center;
+        background-size: contain;
+         object-fit: cover;
+         z-index:3;
+    }
+  
+  
+  
+    #section0 .layer{
+      position: absolute;
+      z-index: 4;
+      width: 100%;
+      left: 0;
+      top: 43%;
+  
+
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+  
+    #section0{
+      overflow: hidden;
+    }
+
+    #infoMenu li a {
+      color: #fff;
+    }
+  
+    video::-webkit-media-controls {
+      display:none !important;
+    }
+  
+  </style>
+
+
+
+
+<div id="fullpage">
+	<div class="section active" data-anchor="firstPage" id="section0">
+    <h1>Hola otra vez guapa</h1>
+    <br>
+    <p>Bueno pues nunca está demás decirte lo mucho que me encantas, en verdad no sé que haría sin ti, me siento tan feliz desde que te tengo en mi vida, has llenado un gran vacío que tenía el cuál me hacía muy amargado y resentido con la vida pero desde que estás conmigo si me has sabido sacar ese lado sentimental y ese lado que tiene ganas de seguir adelante.
+      <br><br>
+      Hablo muy en serio cuando te digo que me he abierto a decirte cosas y a ser sincero como con nadie antes, me has hecho hablar de cosas que nunca pensé que diría y se siente muy lindo poder hablar de ese tipo de cosas y que me digas que pase lo que pase ahí estarás para apoyarme sin juzgarme.
+      <br><br>
+      De verdad no sé que pude hacer para merecer a una novia tar perfecta como tú,lo único que sé es que no quiero que esto se acabe nunca porque te necesito, porque me complementas como ninguna otra persona jamás podrá, porque eres mi todo y solo te amo y amaré a ti.
+      <br><br>
+      
+    </p>
+  </video>
+</div>
+  
+	<div class="section" id="section1" data-anchor="secondPage">
+	    <div class="slide active "><h1>En serio me encantas</h1></div>
+	    <div class="slide"><h1>Mucho</h1></div>
+	    <div class="slide"><h1>Muchísimo</h1></div>
+	    <div class="slide"><h1>En exceso corazón</h1></div>
+      <div class="slide"><h1>Vieja preciosa</h1></div>
+	</div>
+
+	<div class="section" data-anchor="3rdPage" id="section2">
+    <h1>Solo para terminar</h1>
+    <br>
+    <p>En serio te me haces la mujer más hermosa que existe en el universo, aunque digas que no es así tienes una preciosidad que nombre, si te vieras con los ojos que te veo en el espejo tú jamás te acomplejarías por nada mi amor hermoso, estas super increiblemente bella y eres super talentosa.
+      <br><br>
+      Simplemente eres perfecta mi amor por más que lo niegues para mí lo eres y siempre lo serás, eres más que todo lo que buscaba y deseaba en esta vida, solo te necesito a ti para ser feliz, me siento coordinado contigo como con nadie antes, tenemos una conexión y una quimica increible. TE AMOOOOOOOOOO.
+      <br><br>
+      Te dejo unas canciones que te quería dedicar pero me esperé hasta ahora.  <i class="fas fa-heart"></i></p>
+    </p>
+  </div>
+
+	<div class="section player" data-anchor="4Page" id="section3"> 
+    <div class="player">
+      <div class="wrapper">
+          <div class="details">
+              <div class="now-playing">PLAYING x OF y</div>
+              <div class="track-art"></div>
+              <div class="track-name">Track Name</div>
+              <div class="track-artist">Track Artist</div>
+          </div>
+
+          <div class="slider_container">
+              <div class="current-time">00:00</div>
+               <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+               <div class="total-duration">00:00</div>
+          </div>
+
+          <div class="slider_container">
+              <i class="fa fa-volume-down"></i>
+               <input type="range" min="1" max="100" value="60" class="volume_slider" onchange="setVolume()">
+               <i class="fa fa-volume-up"></i>
+          </div>
+
+          <div class="buttons">
+              <div class="random-track" onclick="randomTrack()">
+                  <i class="fas fa-random fa-2x" title="random"></i>
+              </div>
+              <div class="prev-track" onclick="prevTrack()">
+                   <i class="fa fa-step-backward fa-2x"></i>
+               </div>
+               <div class="playpause-track" onclick="playpauseTrack()">
+                   <i class="fa fa-play-circle fa-5x"></i>
+               </div>
+               <div class="next-track" onclick="nextTrack()">
+                   <i class="fa fa-step-forward fa-2x"></i>
+               </div>
+               <div class="repeat-track" onclick="repeatTrack()">
+                   <i class="fa fa-repeat fa-2x" title="repeat"></i>
+               </div>
+          </div>
+
+           <div id="wave">
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+           </div>  
+      </div>
+  </div>
+  </div>
+
+
+
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    menu: '#menu',
+    continuousVertical: true,
+    navigation: true,
+    afterLoad: function(origin, destination, direction, trigger){
+      console.log("afterLoad: destination:" + destination.index);
+    },
+    onLeave: function(origin, destination, direction, trigger){
+      console.log("onLeave: destination:" + destination.index);
+    },
+  });
+</script>
+<script type="text/javascript" src="./dist/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+	});
+</script>
+
+</body>
+</html>
